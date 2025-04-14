@@ -1,0 +1,21 @@
+{
+  "name": "mcp-calculator-server",
+  "version": "1.0.0",
+  "description": "A simple calculator MCP server",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "bin": {
+    "mcp-calculator": "./dist/index.js"
+  },
+  "keywords": ["mcp", "calculator"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "zod": "^3.x.x"
+  }
+}
