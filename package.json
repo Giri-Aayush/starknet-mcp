@@ -1,7 +1,7 @@
 {
-  "name": "mcp-calculator-server",
+  "name": "starknet-mcp",
   "version": "1.0.0",
-  "description": "A simple calculator MCP server",
+  "description": "Starknet token reader MCP server for Claude",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
@@ -9,13 +9,29 @@
     "start": "node dist/index.js"
   },
   "bin": {
-    "mcp-calculator": "./dist/index.js"
+    "starknet-mcp": "./dist/index.js"
   },
-  "keywords": ["mcp", "calculator"],
-  "author": "",
+  "keywords": [
+    "mcp",
+    "claude",
+    "starknet",
+    "tokens",
+    "blockchain"
+  ],
+  "author": "Aayush Giri",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Giri-Aayush/starknet-mcp.git"
+  },
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "latest",
-    "zod": "^3.x.x"
+    "starknet": "^5.19.5",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   }
 }
